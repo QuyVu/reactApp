@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Header from './Body/Header.jsx';
-import Body from './Body/Body.jsx';
-import Footer from './Body/Footer.jsx';
+import Header from './components/Header.jsx';
+import Body from './components/Body.jsx';
+import Footer from './components/Footer.jsx';
 
 export default class Layout extends React.Component {
 	componentDidMount() {
@@ -12,7 +12,9 @@ export default class Layout extends React.Component {
 	render() {
 		return (
 			<div>
-			Now it's work
+				<Header />
+				<Body />
+				<Footer />
 			</div>
 		);
 	}
