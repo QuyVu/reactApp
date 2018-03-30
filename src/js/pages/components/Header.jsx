@@ -1,9 +1,11 @@
 import React from "react";
 
-export default class Layout extends React.Component {
+export default class Header extends React.Component {
 	render() {
 		return (
-			<h1>Header</h1>
+			<div>
+				<h1>{this.props.header}</h1>
+			</div>
 		);
 	}
 }
